@@ -9,6 +9,6 @@ class Authentication:
         self.client = self.session.client(service)
         return self.client
 
-account_one = Authentication('default')
+account_one = Authentication('none')
 result = account_one.initializeService(conf['service']).describe_security_groups(GroupIds=['sg-928dd2e8'])
 print(result)
