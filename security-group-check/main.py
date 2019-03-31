@@ -10,6 +10,6 @@ class Authentication:
         return self.client
 
 account_one = Authentication('default')
-result = account_one.initializeService(conf['service']).describe_security_groups(GroupIds=[conf["securityGroups"][0]])
+result = account_one.initializeService(conf['service']).describe_security_groups(GroupIds=[conf["securityGroups"][1]])
 pprint.pprint(result['SecurityGroups'])
 #pprint.pprint(result['SecurityGroups'][0]['IpPermissions'])
