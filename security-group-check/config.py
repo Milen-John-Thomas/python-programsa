@@ -1,0 +1,3 @@
+conf = {
+ "service" : "ec2"
+}
